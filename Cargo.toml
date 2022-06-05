@@ -1,0 +1,23 @@
+[package]
+name = "idz"
+version = "0.1.0"
+edition = "2021"
+default-run = "second"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+name = "second"
+path="src/lib.rs"
+
+[[bin]]
+name = "second"
+path = "src/second_main.rs"
+
+[[bin]]
+name = "first"
+path = "src/first.rs"
+
+
